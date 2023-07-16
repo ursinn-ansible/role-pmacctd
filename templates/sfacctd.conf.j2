@@ -19,7 +19,7 @@ bgp_peer_src_as_type: map
 !
 plugins: kafka
 kafka_output: json
-kafka_broker_host: {{ app_bgp_bird2_pmacct_kafka_broker_host }}
+kafka_broker_host: {{ app_pmacctd_kafka_broker_host }}
 kafka_topic: sfacct.acct
 kafka_refresh_time: 5
 kafka_history: 5m
