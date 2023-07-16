@@ -1,2 +1,0 @@
----
-- include_tasks: "{{ role_path }}/tasks/setup-pmacct.yml"
