@@ -1,0 +1,33 @@
+[submodule "roles/role-pdns"]
+	path = roles/role-pdns
+	url = https://github.com/ursinn-ansible/role-pdns.git
+[submodule "roles/role-wireguard"]
+	path = roles/role-wireguard
+	url = https://github.com/ursinn-ansible/role-wireguard.git
+[submodule "roles/role-ripe-atlas"]
+	path = roles/role-ripe-atlas
+	url = https://github.com/ursinn-ansible/role-ripe-atlas.git
+[submodule "roles/role-fail2ban"]
+	path = roles/role-fail2ban
+	url = https://github.com/ursinn-ansible/role-fail2ban.git
+[submodule "roles/role-ssh"]
+	path = roles/role-ssh
+	url = https://github.com/ursinn-ansible/role-ssh.git
+[submodule "roles/role-update"]
+	path = roles/role-update
+	url = https://github.com/ursinn-ansible/role-update.git
+[submodule "roles/role-smokeping"]
+	path = roles/role-smokeping
+	url = https://github.com/ursinn-ansible/role-smokeping.git
+[submodule "roles/role-promtail"]
+	path = roles/role-promtail
+	url = https://github.com/ursinn-ansible/role-promtail.git
+[submodule "roles/role-endlessh"]
+	path = roles/role-endlessh
+	url = https://github.com/ursinn-ansible/role-endlessh.git
+[submodule "roles/role-bird2"]
+	path = roles/role-bird2
+	url = https://github.com/ursinn-ansible/role-bird2.git
+[submodule "roles/role-pathvector"]
+	path = roles/role-pathvector
+	url = https://github.com/ursinn-ansible/role-pathvector.git
