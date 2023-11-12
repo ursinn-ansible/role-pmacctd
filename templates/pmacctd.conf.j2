@@ -1,26 +1,25 @@
+!
 ! pmacctd configuration
 !
-!
-!
-daemonize: true
-pidfile: /var/run/pmacctd.pid
+! debug: true
 syslog: daemon
-!
-pcap_interfaces_map: /etc/pmacct/interfaces.map
+pidfile: /var/run/pmacctd.pid
+daemonize: true
 pre_tag_map: /etc/pmacct/pretag.map
+pcap_interfaces_map: /etc/pmacct/interfaces.map
 pmacctd_as: bgp
 pmacctd_net: bgp
 sampling_rate: 1
-bgp_peer_src_as_type: bgp
-aggregate: src_host, dst_host, src_as, dst_as, peer_src_ip, peer_dst_ip, peer_src_as, peer_dst_as, label
 !
 bgp_daemon: true
 bgp_daemon_ip: 127.0.0.2
 bgp_daemon_port: 180
-bgp_daemon_max_peers: 1
+bgp_daemon_max_peers: 10
 bgp_agent_map: /etc/pmacct/peering_agent.map
-bgp_peer_src_as_map: /etc/pmacct/peers.map
-bgp_peer_src_as_type: map
+networks_file: /etc/pmacct/networks.lst
+networks_file_no_lpm: true
+!
+aggregate: src_host, dst_host, src_as, dst_as, peer_src_ip, peer_dst_ip, peer_src_as, peer_dst_as, label
 !
 plugins: kafka
 kafka_output: json
@@ -29,3 +28,10 @@ kafka_topic: pmacct.acct
 kafka_refresh_time: 5
 kafka_history: 5m
 kafka_history_roundoff: m
+!
+!
+!
+!bgp_peer_src_as_type: bgp
+!
+!bgp_peer_src_as_map: /etc/pmacct/peers.map
+!bgp_peer_src_as_type: map

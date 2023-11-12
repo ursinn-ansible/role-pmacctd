@@ -1,4 +1,5 @@
 ---
+app_pmacctd_enabled: false
 app_pmacctd_bgp_ip: 127.0.0.1
 app_pmacctd_networks: ""
 app_pmacctd_interfaces: ""
